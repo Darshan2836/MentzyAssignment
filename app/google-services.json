@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "293021180075",
+    "firebase_url": "https://mentzyassignment.firebaseio.com",
+    "project_id": "mentzyassignment",
+    "storage_bucket": "mentzyassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293021180075:android:068908969924dde69517ee",
+        "android_client_info": {
+          "package_name": "in.astudentzone.mentzyassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293021180075-l9bvvtma8l8ktlm5rkn93pbs7i3jevd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHro7RNqxAJoVkZAaq-SEjlj2QUuNcRPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293021180075-l9bvvtma8l8ktlm5rkn93pbs7i3jevd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

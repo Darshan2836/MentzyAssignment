@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.ProfilePic">
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+    </ImageView>
+
+    <TextView
+        android:layout_below="@id/camera"
+        android:id="@+id/profilepictext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Profile Photo"
+        android:fontFamily="@font/sbold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/addphotobutton"
+        android:layout_width="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="56dp"
+        android:layout_below="@id/profilepictext"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rectangle_green"
+        android:fontFamily="@font/opensanssemibold"
+        android:text="Add a photo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp"></Button>
+
+    <TextView
+        android:id="@+id/skipbutton"
+        android:layout_below="@id/addphotobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:textColor="@color/green"
+        android:fontFamily="@font/opensanssemibold">
+    </TextView>
+
+</RelativeLayout>

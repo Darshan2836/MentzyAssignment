@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.NewUserForm">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="50dp"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editprofile"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/formtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form"
+            android:layout_below="@id/cardview"
+            android:fontFamily="@font/sbold"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formtext"
+            android:orientation="vertical">
+
+            <!--property/pg name-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="Name">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/red">
+                </TextView>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/green"
+                android:textCursorDrawable="@drawable/color_cursor">
+            </EditText>
+
+            <!--City-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="Email address">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/red">
+                </TextView>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/green"
+                android:textCursorDrawable="@drawable/color_cursor"></EditText>
+
+
+            <!--Area/Locality-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="Age">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:textColor="@color/red">
+                </TextView>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/green"
+                android:textCursorDrawable="@drawable/color_cursor">
+            </EditText>
+
+
+            <!--Owner name-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="City(Optional)">
+            </TextView>
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/green"
+                android:textCursorDrawable="@drawable/color_cursor"></EditText>
+
+
+            <!--profession-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="Profession(optional)">
+            </TextView>
+            <EditText
+                android:id="@+id/profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/green"
+                android:textCursorDrawable="@drawable/color_cursor">
+            </EditText>
+
+
+            <!--hobbies-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:text="Hobbies(optional)">
+            </TextView>
+            <EditText
+                android:id="@+id/hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/green"
+                android:textCursorDrawable="@drawable/color_cursor">
+            </EditText>
+
+
+            <Button
+                android:id="@+id/submitbuttonform"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"
+                android:alpha="0.5"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_green"
+                android:layout_marginRight="20dp"
+                android:text="Enter details"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:fontFamily="@font/opensanssemibold"
+                android:layout_height="56dp">
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
